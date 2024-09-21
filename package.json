@@ -1,0 +1,21 @@
+{
+  "name": "ma_testing",
+  "version": "1.0.0",
+  "description": "this repository hold testing scripts for my masterthesis",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "selenium-drivers": "^2.1.0",
+    "selenium-webdriver": "^4.25.0",
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "@types/selenium-webdriver": "^4.1.26",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  }
+}
