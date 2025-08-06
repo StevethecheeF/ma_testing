@@ -1,0 +1,21 @@
+{
+  "name": "selenium",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "@types/selenium-webdriver": "^4.1.26",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.25.0"
+  }
+}
