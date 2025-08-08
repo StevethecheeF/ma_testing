@@ -1,7 +1,7 @@
 import {executeRuns} from "../../executer/runner.js";
 import {initialLoad} from "../seleniumTests/initialLoad.js";
 import {add10kButtonTest, add1kButtonTest, create10kButtonTest, create1kButtonTest} from "../seleniumTests/addCreateButtonTest.js";
-import {numberOfRowsToUpdate} from "../../definitions.js";
+import {numberOfRowsToPrepare} from "../../definitions.js";
 import {deleteButtonTest, updateButtonTest} from "../seleniumTests/updateDeleteButtonTest.js";
 
 /*
@@ -29,13 +29,13 @@ export async function create10kElementsTester(){
 }
 
 export async function updateElementsTester(){
-	for(let amount of numberOfRowsToUpdate){
+	for(let amount of numberOfRowsToPrepare){
 		await executeRuns(updateButtonTest(amount),"update"+amount+"k");
 	}
 }
 
 export async function deleteElementsTester(){
-	for(let amount of numberOfRowsToUpdate){
+	for(let amount of numberOfRowsToPrepare){
 		await executeRuns(deleteButtonTest(amount),"delete"+amount+"k");
 	}
 }
