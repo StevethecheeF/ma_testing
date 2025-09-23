@@ -15,12 +15,14 @@ async function simpleButtonClickTest(buttonId, url, file) {
 	try {
 		// wait until the header is loaded
 		await driver.wait(until.elementLocated(By.id("framework")));
-		const button = await driver.findElement(By.id(buttonId));
+		let button = await driver.findElement(By.id(buttonId));
 
 		await initMeasurement(driver);
 
 		const data  = [];
 		for(let i = 0; i<buttonClicks; i++){
+			// react also redraws the menu, therefore get the button reference
+			button = await driver.findElement(By.id(buttonId));
 			const duration = await measureClickForElement(driver,button);
 			console.log(duration)
 			data.push(duration)
@@ -32,8 +34,7 @@ async function simpleButtonClickTest(buttonId, url, file) {
 	} catch (e) {
 		console.log(e)
 	} finally {
-		//await driver.quit();
-
+		await driver.quit();
 	}
 }
 
