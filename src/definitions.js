@@ -1,8 +1,9 @@
 // the definition for what framework runs under what url
 export const frameworks={
-	vue: "http://localhost:3003",
+	//vue: "http://localhost:3003",
 	//react:"http://localhost:3006",
 	//svelte:"http://localhost:3009",
+	//angular: "http://localhost:3012",
 	//leptos:"",
 };
 
