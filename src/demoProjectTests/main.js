@@ -6,15 +6,16 @@ import {
 	deleteElementsTester,
 	initialLoadTester,
 	updateElementsTester
-} from "./demoProjectTests/executer/testRunDefinitions.js";
+} from "./executer/testRunDefinitions.js";
 
 // enable/disable what tests should be run
 // the testing applications need to run before the tests are executed (see where the url should be in the definitions.js file)
 
-//initialLoadTester();
-//add1kElementsTester();
-//add10kElementsTester();
-//create1kElementsTester();
-//create10kElementsTester();
-//updateElementsTester();
-deleteElementsTester();
+// testcases for demo  project
+await initialLoadTester();
+await add1kElementsTester();
+await add10kElementsTester();
+await create1kElementsTester();
+await create10kElementsTester();
+await updateElementsTester();
+await deleteElementsTester();

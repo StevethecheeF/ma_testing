@@ -12,4 +12,4 @@ export const numberOfRuns = 2;
 // the number of button clicks for the simple button tests should be done
 export const buttonClicks = 10;
 // the number of rows that should be updated (in tausend)
-export const numberOfRowsToPrepare = [1,2,]
+export const numberOfRowsToPrepare = [1,2,5,10]
